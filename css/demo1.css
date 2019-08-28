@@ -1,0 +1,42 @@
+.card{
+    width:210px;
+    height:200px;
+    background:red;
+    position:relative;
+    float:left;
+}
+.card:nth-child(2){
+    margin-top:10px;
+}
+.card:nth-child(4){
+    margin-top:10px;
+}
+.card:nth-child(6){
+    margin-top:10px;
+}
+.font,.back{
+    position:absolute;
+    transform: all 0.4s;
+    float:left;
+}
+.font{
+    z-index: 999;
+    transform: rotateY(180deg);
+    /*背面隐藏 */
+    backface-visibility: hidden;
+}
+.back{
+    z-index:998;
+    transform: rotateY(0deg);
+    backface-visibility:hidden;
+}
+.back img{
+    width:200px;
+    height:200px;
+}
+.card:hover .font{
+    transform: rotateY(0deg);
+}
+.card:hover .back{
+    transform: rotateY(180deg);
+}

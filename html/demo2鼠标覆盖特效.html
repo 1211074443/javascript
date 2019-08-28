@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+		body,html,ul,li{
+			margin:0;
+			padding:0;
+		}
+		li{
+			list-style: none;
+		}
+		.all img{
+			border-radius: 5px;
+			width:170px;
+			height:120px;
+		}
+		.all ul li{
+			float:left;
+			position:relative;
+			margin:0 6px;
+			transition:all 0.5s;
+		}
+		.all ul li:hover{
+			/*原有图片大小扩大10%*/
+			transform:scale(1.1);
+		}
+		.all span{
+			position: absolute;
+			bottom:3px;
+			background:rgba(0,0,0,0.5);
+			width:170px;
+			height:23px;
+			color:#e8e8e8e8;
+			text-align:center;
+			font-size:12px;
+			font-family:"微软雅黑";
+			line-height:23px;
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="all">
+		<ul>
+			<li>
+				<img src="../images/back.png">
+				<span>难受，香菇</span>
+			</li>
+			<li>
+				<img src="../images/back.png">
+				<span>哟哟哟哟</span>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
